@@ -1,4 +1,4 @@
-#Fetching the data based on the date range#
+## Fetching the data based on the date range
 
 ```<collectionName>.find({<attributeName>:{"$lte":<endDate>, "$gte":<startDate>}},{"fields":[<fieldName>, <fieldName>]}, function(error, response) {
       if (error) {
@@ -8,4 +8,3 @@
         response.body = { "data": response };
         response.complete();
     });
-    ```
